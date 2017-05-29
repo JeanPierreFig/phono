@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/pophone/index.css">
+
+</head>
+
+
+<script>
+$(document).ready(function() {
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+document.getElementById('myImg').onclick = function(){
+    console.log("hello");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+});
+</script>
+
+
+
+
+<body>
+
+
+
+<!-- Video background-->
+  <div align="center" class="embed-responsive embed-responsive-16by9">
+      <video autoplay class="embed-responsive-item">
+          <source src="/pophone/backvideo.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-desc">
+          <h1></h1>
+       </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="container-fluid">
+
+
+    <div class="row">
+      <div class="col-md-12" style="">
+        <div class="quote">
+         <img src="me.jpg" alt="HTML5 Icon" style="max-width:95px;max-height:95px;">
+          <h3>"We normally can't appreciate how beautifully engineered the iPhone is <br> but now you can with Phono."</h3>
+            <p>Phono was created on the idea that industrial desinge is beautufull Specially the iPhone, <br> but because it cost so
+              much we tend to hide it under an ogly case.<br> Now you can bring it in your home and hang it like the art it is.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+           <div class="col-md-6">
+
+
+                <img id="myImg" src="iPhone6Graynew.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                <h3 style="color:#555555; text-align:center;">iPhone 6 Gray<h3>
+                <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                  <form action="/charge"style="text-align:center;" method="POST">
+                   <script
+                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                     data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                     data-name="Matt's Widgets and Gizmos"
+                     data-description="2 widgets ($20.00)"
+                     data-amount="2000"
+                     data-billingAddress="true"
+                     data-shippingAddress="true">
+                   </script>
+                   </form>
+
+           </div>
+
+           <div class="col-md-6">
+
+                <img id="myImg" src="iPhone6Goldnew.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                <h3 style="color:#555555; text-align:center;">iPhone 6 Gold<h3>
+                <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                  <form action="/charge"style="text-align:center;" method="POST">
+                   <script
+                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                     data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                     data-name="Matt's Widgets and Gizmos"
+                     data-description="2 widgets ($20.00)"
+                     data-amount="2000"
+                     data-billingAddress="true"
+                     data-shippingAddress="true">
+                   </script>
+                   </form>
+
+           </div>
+
+     </div>
+     </div>
+
+
+
+     <div class="row">
+             <div class="colum-md-12 padding-0">
+
+                  <h1 style="text-align:center; padding:100px; font-weight:75;">Phono as a gift.<h1>
+                 <img  src="transition1.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+             </div>
+         </div>
+
+
+
+     <div class="row">
+         <div class="col-md-12">
+            <div class="col-md-6">
+
+
+                 <img id="myImg" src="iPhone6Graynew.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                 <h3 style="color:#555555; text-align:center;">iPhone 6 Gray<h3>
+                 <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                 <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                   <form action="/charge"style="text-align:center;" method="POST">
+                    <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                      data-name="Matt's Widgets and Gizmos"
+                      data-description="2 widgets ($20.00)"
+                      data-amount="2000"
+                      data-billingAddress="true"
+                      data-shippingAddress="true">
+                    </script>
+                    </form>
+
+            </div>
+
+            <div class="col-md-6">
+
+                 <img id="myImg" src="iphonecGreen.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                 <h3 style="color:#555555; text-align:center;">iPhone 6 Gold<h3>
+                 <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                 <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                   <form action="/charge"style="text-align:center;" method="POST">
+                    <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                      data-name="Matt's Widgets and Gizmos"
+                      data-description="2 widgets ($20.00)"
+                      data-amount="2000"
+                      data-billingAddress="true"
+                      data-shippingAddress="true">
+                    </script>
+                    </form>
+
+            </div>
+
+      </div>
+      </div>
+      <div class="row">
+              <div class="colum-md-12 padding-0">
+
+                   <h1 style="text-align:center; padding:100px; font-weight:bold;">Conversation starter.<h1>
+                     <div align="center" class="embed-responsive embed-responsive-16by9 ">
+                         <video autoplay loop class="embed-responsive-item">
+                             <source src="/pophone/Conversation_starter.mp4" type="video/mp4">
+                         </video>
+                         <div class="overlay-desc">
+                             <h1></h1>
+                          </div>
+                     </div>
+          </div>
+
+
+      <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-6">
+
+
+                  <img id="myImg" src="iphonecblue.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                  <h3 style="color:#555555; text-align:center;">iPhone 6 Gray<h3>
+                  <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                  <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                    <form action="/charge"style="text-align:center;" method="POST">
+                     <script
+                       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                       data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                       data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                       data-name="Matt's Widgets and Gizmos"
+                       data-description="2 widgets ($20.00)"
+                       data-amount="2000"
+                       data-billingAddress="true"
+                       data-shippingAddress="true">
+                     </script>
+                     </form>
+
+             </div>
+
+             <div class="col-md-6">
+
+                  <img id="myImg" src="iPhone6Goldnew.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                  <h3 style="color:#555555; text-align:center;">iPhone 6 Gold<h3>
+                  <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                  <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                    <form action="/charge"style="text-align:center;" method="POST">
+                     <script
+                       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                       data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                       data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                       data-name="Matt's Widgets and Gizmos"
+                       data-description="2 widgets ($20.00)"
+                       data-amount="2000"
+                       data-billingAddress="true"
+                       data-shippingAddress="true">
+                     </script>
+                     </form>
+
+             </div>
+
+       </div>
+       </div>
+
+       <div class="row">
+           <div class="col-md-12">
+              <div class="col-md-6">
+
+
+                   <img id="myImg" src="iPhone6Graynew.jpg"  class="img-responsive" style="width:100%" alt="HTML5 Icon">
+                   <h3 style="color:#555555; text-align:center;">iPhone 6 Gray<h3>
+                   <h6 style="color:#9a9a9a; text-align:center;">iPhone 6 Gold on a 16x20 white canvas.<h6>
+                   <h3 style="color:#555555; text-align:center;">$140<h1>
+
+                     <form action="/charge"style="text-align:center;" method="POST">
+                      <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_i2txBI2jUjSQIMoqFz3Fo326"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-name="Matt's Widgets and Gizmos"
+                        data-description="2 widgets ($20.00)"
+                        data-amount="2000"
+                        data-billingAddress="true"
+                        data-shippingAddress="true">
+                      </script>
+                      </form>
+
+              </div>
+
+              <div class="col-md-6">
+
+
+              </div>
+
+        </div>
+        </div>
+
+
+
+</div>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+<!--
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col">
+
+        <div class="iPhone6Gray">
+          <img src="iphone6Gold.jpg" alt="HTML5 Icon" style="width:292px;height:386px;">
+
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <div class="iPhone6Gray">
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
